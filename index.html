@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <img id="stormtrooper" src="img/stormtrooper_render.jpg"/>
+                <img id="vader" src="img/vader.jpg"/>
+                <img id="mesh" src="img/mesh.png"/>
+            </a-assets>
+            <a-box width="1" height="1" depth="1"
+                position="0 0 0"
+                rotation="45 45 45"
+                scale="1 2.5 1"
+                src="#stormtrooper"></a-box>
+            <a-box width="2" height="2" depth="2" 
+                position="3 4 -3" 
+                rotation="0 45 0" 
+                src="#vader"></a-box>
+            <a-box width="2" height="2" depth="2" 
+                position="-3 4 -2" 
+                rotation="2 45 0" 
+                src="#mesh"></a-box>
+        </a-scene>
+    </body>
+</html>
